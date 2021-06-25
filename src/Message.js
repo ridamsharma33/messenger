@@ -9,7 +9,7 @@ const Message = React.forwardRef(({ message, username }, ref) => {
 		<div className="messageBox">
 			<div ref={ref} className={`message ${isUser && "message__user"}`}>
 				<div ref={ref} className="mess__username">
-					{!isUser && `${message.username || "Unknown User"}:`}
+					{!isUser && `${message.username || "Unknown User"}`}
 				</div>
 
 				<Card
